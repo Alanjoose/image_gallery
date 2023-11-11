@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image galery</title>
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- begin::Header -->
+    <header>
+        <h1>Gallery</h1>
+
+       <div></div>
+
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/alan-josé-dev-profile/" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/Alanjoose" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <!-- end::Header -->
+
+    <main id="images-grid">
+
+        <img src="./assets/img/pexels-benedek-kaufmann-18968224.jpg" class="img-grid-item" alt="" loading="lazy">
+
+        <img src="./assets/img/pexels-erik-alfaro-18311326.jpg" class="img-grid-item" alt="" loading="lazy">
+
+        <img src="./assets/img/pexels-gantas-vaičiulėnas-12360546.jpg" class="img-grid-item" alt="" loading="lazy">
+
+        <img src="./assets/img/pexels-gizem-çelebi-19065473.jpg" class="img-grid-item" alt="" loading="lazy">
+
+        <img src="./assets/img/pexels-laura-meinhardt-7372338.jpg" class="img-grid-item" alt="" loading="lazy">
+
+        <img src="./assets/img/pexels-nguyễn-văn-minh-vương-8486108.jpg" class="img-grid-item" alt="" loading="lazy">
+
+        <div class="hidden image-display-control">
+
+            <div class="row">
+                <button type="button" id="close">X</button>
+            </div>
+
+            <div class="controls">
+                <button type="button" id="previous"><</button>
+            <img src="" alt="Image" id="current-image"/>
+            <button type="button" id="next">></button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="./src/scripts/index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
