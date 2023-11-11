@@ -1,4 +1,5 @@
-let images = document.querySelectorAll('.img-grid-item');
+document.addEventListener('DOMContentLoaded', () => {
+    let images = document.querySelectorAll('.img-grid-item');
 let imageDisplayControl = document.querySelector('.image-display-control');
 let currentImage = document.querySelector('#current-image');
 let imagesSources = [];
@@ -52,3 +53,4 @@ const showPreviousImage = (currentImage, previousImage) => {
 const showNextImage = (currentImage, nextImage) => {
     currentImage.setAttribute('src', nextImage);
 }
+});
